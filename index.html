@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__wrapper">
+            <h1 class="main__title">Увеличительное стекло</h1>
+            <ul class="main__items">
+                <li class="main__item">Обработанное стекло - линза</li>
+                <li class="main__item">Обработанное стекло, основание - лупа</li>
+                <li class="main__item">Обработанное стекло, основание, объектив - подзорная труба</li>
+                <li class="main__item">Обработанное стекло, основание, объектив, вспышка - фотоаппарат</li>
+            </ul>
+            <fieldset class="main__fieldset">
+                <legend class="main__legend">Добавить или удалить элемент</legend>
+
+                <div class="pretty p-svg p-curve">
+                    <input type="checkbox" id="lens" onclick="myFunction()" />
+                    <div class="state p-success">
+                        <svg width="20" height="20" class="svg svg-icon">
+                            <use xlink:href="img/icons.svg#checkbox"></use>
+                        </svg>
+                        <label>Обработанное стекло</label>
+                    </div>
+                </div>
+                <!-- /.pretty -->
+
+                <div class="pretty p-svg p-curve">
+                    <input type="checkbox" id="foundation" onclick="myFunction()" />
+                    <div class="state p-success">
+                        <!-- svg path -->
+                        <svg width="20" height="20" class="svg svg-icon">
+                            <use xlink:href="img/icons.svg#checkbox"></use>
+                        </svg>
+                        <label>Основание</label>
+                    </div>
+                </div>
+                <!-- /.pretty -->
+
+                <div class="pretty p-svg p-curve">
+                    <input type="checkbox" id="spyglass" onclick="myFunction()" />
+                    <div class="state p-success">
+                        <!-- svg path -->
+                        <svg width="20" height="20" class="svg svg-icon">
+                            <use xlink:href="img/icons.svg#checkbox"></use>
+                        </svg>
+                        <label>Объектив</label>
+                    </div>
+                </div>
+                <!-- /.pretty -->
+
+                <div class="pretty p-svg p-curve">
+                    <input type="checkbox" id="camera" onclick="myFunction()" />
+                    <div class="state p-success">
+                        <!-- svg path -->
+                        <svg width="20" height="20" class="svg svg-icon">
+                            <use xlink:href="img/icons.svg#checkbox"></use>
+                        </svg>
+                        <label>Вспышка</label>
+                    </div>
+                </div>
+                <!-- /.pretty -->
+
+            </fieldset>
+
+            <div class="main__images">
+                <img src="img/contact-lens.svg" alt="Lens" class="pretty__img" id="lens-img">
+                <img src="img/find.svg" alt="Magnifier" class="pretty__img" id="foundation-img">
+                <img src="img/spyglass.svg" alt="Spyglass" class="pretty__img" id="spyglass-img">
+                <img src="img/camera.svg" alt="Camera" class="pretty__img" id="camera-img">
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.main {}
+
+.main__wrapper {
+    padding: 15rem 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main__title {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.main__items {
+    margin-top: 20px;
+}
+
+.main__item {
+    list-style-type: decimal;
+}
+
+.main__fieldset {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+.main__legend {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.pretty__img {
+    display: none;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
